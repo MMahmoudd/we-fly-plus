@@ -8,7 +8,14 @@
         <div class="col-md-8">
           <h2>Get in Touch</h2>
             <div class="contactForm">
-              <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+              <b-form
+                accept-charset="UTF-8"
+                action="mailto:info@weflyplus.com"
+                method="POST"
+                target="_blank"
+                enctype="multipart/form-data"
+                name="EmailForm"
+              >
                 <div class="row">
                   <div class="col-md-6">
                     <b-form-group
@@ -116,8 +123,21 @@
                 <i class="far fa-envelope"></i>
                 <p>info@weflyplus.com</p>
               </div>
+              <div class="social">
+                <a href="https://www.facebook.com/WeFlyPlus" target="_blank" rel="FaceBook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/weflyplus/" target="_blank" rel="instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" rel="twitter">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" rel="linkedin">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
             </div>
-
         </div>
       </div>
     </div>
@@ -139,23 +159,6 @@
       }
     },
     methods: {
-      onSubmit(event) {
-        event.preventDefault()
-        alert(JSON.stringify(this.form))
-      },
-      onReset(event) {
-        event.preventDefault()
-        // Reset our form values
-        this.form.email = ''
-        this.form.name = ''
-        this.form.food = null
-        this.form.checked = []
-        // Trick to reset/clear native browser form validation state
-        this.show = false
-        this.$nextTick(() => {
-          this.show = true
-        })
-      }
     }
   }
 </script>

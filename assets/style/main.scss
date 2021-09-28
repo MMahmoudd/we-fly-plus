@@ -58,6 +58,26 @@ h1, h2, h3, h4, h5, h6, button, input, textarea{
     box-shadow: unset !important;
   }
 }
+.social{
+  padding-top: 20px;
+  i{
+    margin: 0 3px;
+    background-color: $secondColor;
+    cursor: pointer;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+    &:hover, &:active,&:focus{
+      background-color: $mainColor;
+      transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -o-transform: scale(1.2);
+}
+  }
+}
 .modal-open{
   // &:focus, &:focus-visible, &:focus-within{
     #__nuxt {
@@ -154,13 +174,21 @@ h1, h2, h3, h4, h5, h6, button, input, textarea{
     .social{
       padding-top: 20px;
       i{
-        margin: 0 5px;
+        margin: 0 3px;
+        background-color: $secondColor;
         cursor: pointer;
-        color: $secondColor;
+        color: #fff;
+        padding: 5px;
+        border-radius: 5px;
         transition: all .3s ease-in-out;
-        &:hover, &:active, &:focus{
-          color: $mainColor;
-        }
+        &:hover, &:active,&:focus{
+          background-color: $mainColor;
+          transform: scale(1.2);
+          -webkit-transform: scale(1.2);
+          -moz-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+          -o-transform: scale(1.2);
+}
       }
     }
     .border{

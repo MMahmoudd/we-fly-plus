@@ -23,10 +23,18 @@
         </ul>
       </div>
       <div class="social">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-linkedin-in"></i>
+        <a href="https://www.facebook.com/WeFlyPlus" target="_blank" rel="FaceBook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/weflyplus/" target="_blank" rel="instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" rel="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" rel="linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
       </div>
       <hr class="border"/>
       <div class="copy">
